@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ricerca Lavoro</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <video autoplay muted loop id="video-bg">
+      <source src="/assets/video.mp4" type="video/mp4" />
+    </video>
+    <nav></nav>
+    <div class="content">
+      <h1>Esplora il tuo potenziale professionale:</h1>
+      <h1>dove ogni ricerca è un'opportunità di successo!</h1>
+
+      <div class="titoloLavorativo">
+        <label for="title">Occupazione:</label>
+        <input type="text" id="title" placeholder="Scrivi qui dentro" />
+      </div>
+
+      <div class="posizioneGeogrfica">
+        <label for="location">Dove?</label>
+        <input type="text" id="location" placeholder="Esempio: Londra" />
+      </div>
+
+      <div class="buttons">
+        <button class="button1" onclick="search()">Cerca</button>
+        <button class="button2" onclick="clearSearch()">Pulisci ricerca</button>
+      </div>
+
+      <p id="totalresults"></p>
+      <ul id="results"></ul>
+    </div>
+    <script src="/assets/javascript.js"></script>
+    <!--footer Marti crealo se vuoi-->
+  </body>
+</html>
